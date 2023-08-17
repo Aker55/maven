@@ -6,7 +6,7 @@
 
   <groupId>com.aker.app</groupId>
   <artifactId>my-app</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
 
   <name>my-app</name>
   <!-- FIXME change it to the project's website -->
@@ -32,13 +32,13 @@
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
        <plugin>
-	   <groupId>com.amashchenko.maven.plugin</groupId>
+           <groupId>com.amashchenko.maven.plugin</groupId>
            <artifactId>gitflow-maven-plugin</artifactId>
            <version>1.20.0</version>
            <configuration>
                <!-- optional configuration -->
             </configuration>
-        </plugin> 
+        </plugin>
        <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
@@ -80,4 +80,19 @@
       </plugins>
     </pluginManagement>
   </build>
+    <distributionManagement>
+     <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>ReleaseRepo</id>
+      <name>Release Repository</name>
+      <url>http://18.218.166.229:8081/repository/my-app-devops-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>SnapshotRepo</id>
+      <name>Snapshot Repository</name>
+      <url>http://18.218.166.229:8081/repository/my-app-devops-snapshots/</url>
+    </snapshotRepository>
+    </distributionManagement>
 </project>
+
