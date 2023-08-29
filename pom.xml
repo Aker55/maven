@@ -85,13 +85,13 @@
       <uniqueVersion>false</uniqueVersion>
       <id>ReleaseRepo</id>
       <name>Release Repository</name>
-      <url>http://18.218.166.229:8081/repository/my-app-devops-releases/</url>
+      <url>http://3.15.30.220:808/repository/my-app-devops-releases/</url>
     </repository>
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
       <id>SnapshotRepo</id>
       <name>Snapshot Repository</name>
-      <url>http://18.218.166.229:8081/repository/my-app-devops-snapshots/</url>
+      <url>http://3.15.30.220:808/repository/my-app-devops-snapshots/</url>
     </snapshotRepository>
     </distributionManagement>
 </project>
